@@ -18,6 +18,7 @@
     <nav>
       <div class="nav-wrapper">
         <a href="/" class="header_link_padd size_150 left">FunSlation</a>
+        <a class="header_link_padd right qr_logo" href="/qr"><img class="qr_logo" src="/img/pngqr.png"></a>
         <a class="header_link_padd right" href="/">Home</a>
       </div>
     </nav>
@@ -50,6 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 80vh;
   }
 
   footer {
@@ -66,6 +68,14 @@
 
   .size_150 {
     font-size: 1.6em;
+  }
+
+  .qr_logo {
+    color: white;
+    height: 64px;
+    width: 64px;
+    padding: 0;
+    align-self: center;
   }
 </style>
 
