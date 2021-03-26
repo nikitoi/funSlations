@@ -1,0 +1,52 @@
+<h4 class="">welcome to {{tranType}} translator</h4>
+<div class="row">
+  <form class="col s12" id="translateForm" action="/translator/{{tranType}}" method="post">
+    
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea" name="text"></textarea>
+        <label for="textarea1">type in here</label>
+        <button id="translate_button" class="btn waves-effect waves-light mybtn" type="submit" name="button">Translate
+          <i class="material-icons right"></i>
+        </button>
+      </div>
+    
+  </form>
+</div>
+
+<div class="row pad_bot_40">
+  <div class="output">
+    <p class="translation">translated text will appear here</p>
+    <button id="sayloud_button" class="btn waves-effect waves-light mybtn" name="button">Say loud
+      <i class="material-icons right"></i>
+    </button>
+  </div>
+</div>
+
+<style>
+  .row {
+    width: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.25);
+  }
+
+  .output {
+    margin: 0 21px;
+  }
+
+  .translation {
+    align-self: flex-start;
+    width: 100vw;
+    font-size: 1.15rem;
+    line-height: 110%;
+    color: #9e9e9e;
+  }
+
+  .pad_bot_40 {
+    padding-bottom: 0.75rem;
+  }
+
+  .mybtn {
+    cursor: pointer;
+    width: 120px;
+    background-color: #ffc107;
+  }
+</style>

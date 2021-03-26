@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunSlations</title>
+  <link rel="stylesheet" href="/materialize _css/materialize.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="/materialize _js/materialize.js"></script>
+          
+  <script defer src="/js/translator.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="header_link_padd size_150 left">FunSlation</a>
+        <a class="header_link_padd right" href="/">Home</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main">
+    {{{body}}}
+  </div>
+
+  <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2021 Nika Chervova
+            <a class="grey-text text-lighten-4 right" href="https://funtranslations.com/">Used API</a>
+            </div>
+          </div>
+        </footer>
+</body>
+
+<style>
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+    background-color: #ffecb3;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    padding-top: 0;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .header_link_padd {
+    padding: 0 20px;
+    font-size: 1.2em;
+  }
+
+  .size_150 {
+    font-size: 1.6em;
+  }
+</style>
+
+</html>
