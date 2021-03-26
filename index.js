@@ -24,4 +24,5 @@ app.use(indexRouter);
 app.use('/translator', translatorRouter);
 
 // Запуск сервера по порту 3000
-app.listen(3000);
+const PORT = process.env.PORT || 80;
+app.listen(PORT);
